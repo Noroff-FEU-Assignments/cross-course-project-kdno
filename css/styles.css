@@ -88,17 +88,22 @@ footer {
 .landing__content {
   position: absolute;
   text-align: center;
-  top: 200px;
+  top: 240px;
   left: 650px;
 }
 
 .gamehub-offers {
-  max-width: 1000px;
   margin: 50px auto;
+}
+
+.reviews__content,
+.gamehub-offers {
+  max-width: 1000px;
   display: flex;
 }
 
-.gamehub-offers > * {
+.gamehub-offers > *,
+.reviews__content > * {
   flex: 1;
 }
 
@@ -111,7 +116,57 @@ footer {
   width: 100%;
 }
 
+.reviews {
+  text-align: center;
+  padding: 50px;
+}
+
+.reviews__content div {
+  margin: 50px;
+}
+
+.reviews__content {
+  text-align: left;
+  margin: auto;
+}
+
+.reviews__name {
+  display: block;
+}
+
 .review_image {
   width: 80px;
   border-radius: 9999px;
+  float: right;
+}
+
+/* Game specific page */
+
+.game-specific {
+  display: flex;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.game-specific > * {
+  flex: 1;
+}
+
+.game-image {
+  max-width: 150px;
+  max-height: 350px;
+  margin-left: 150px;
+}
+
+.game-image_thumbnails {
+  display: flex;
+}
+
+.game-image_thumbnails img {
+  justify-content: space-between;
+  gap: 5px;
+  margin-top: 5px;
+  max-width: 200px;
+  max-height: 100px;
+  margin-left: 25px;
 }
