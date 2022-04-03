@@ -1,8 +1,31 @@
-header {
+header,
+footer {
   background-color: #1d2540;
   color: white;
 }
 
 header a {
   color: white;
+}
+
+.cta-view {
+  background-color: #df7b2f;
+  color: white;
+}
+
+.reviews {
+  background-color: #e5e6e8;
+}
+.featured-games {
+  background-color: white;
+}
+
+.cta {
+  background-color: #df7b2f;
+  color: white;
+  font-size: large;
+}
+
+footer {
+  text-align: center;
 }
