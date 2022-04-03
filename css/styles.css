@@ -72,6 +72,18 @@ footer {
   background-repeat: no-repeat;
   background-position-x: right;
   background-position-y: bottom;
+  position: relative;
+}
+
+.landing__content {
+  position: absolute;
+  text-align: right;
+  top: 140px;
+  left: 310px;
+}
+
+.gamehub_offers li {
+  text-transform: capitalize;
 }
 
 .Gamehub-offers_image {
