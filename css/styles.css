@@ -10,6 +10,23 @@ h2,
   text-transform: uppercase;
 }
 
+nav ul {
+  padding: 0px;
+}
+
+nav li {
+  display: inline-block;
+}
+
+/* Links */
+a {
+  text-decoration: none;
+}
+
+.active {
+  text-decoration: underline;
+}
+
 header,
 footer {
   background-color: #1d2540;
@@ -54,7 +71,7 @@ footer {
 }
 
 .Gamehub-offers_image {
-  border: none;
+  border: 200px;
 }
 
 .review_image {
