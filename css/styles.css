@@ -16,7 +16,7 @@ header {
 }
 
 nav {
-  margin-left: 50px;
+  margin-left: 30px;
 }
 nav ul {
   padding: 0px;
@@ -88,8 +88,8 @@ footer {
 .landing__content {
   position: absolute;
   text-align: center;
-  top: 100px;
-  left: 100px;
+  top: 200px;
+  left: 650px;
 }
 
 .gamehub-offers {
@@ -108,8 +108,10 @@ footer {
 
 .Gamehub-offers__image {
   border: 100px;
+  width: 100%;
 }
 
 .review_image {
+  width: 80px;
   border-radius: 9999px;
 }
