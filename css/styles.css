@@ -41,3 +41,22 @@ header a {
 footer {
   text-align: center;
 }
+
+/* Home */
+
+.landing {
+  background-image: url(../image/Homepage/Home_image.jpg);
+  background-size: cover;
+  min-height: 82vh;
+  background-repeat: no-repeat;
+  background-position-x: right;
+  background-position-y: bottom;
+}
+
+.Gamehub-offers_image {
+  border: none;
+}
+
+.review_image {
+  border-radius: 9999px;
+}
