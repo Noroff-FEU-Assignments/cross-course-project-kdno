@@ -77,9 +77,9 @@ footer {
 
 .landing__content {
   position: absolute;
-  text-align: right;
+  text-align: center;
   top: 140px;
-  left: 310px;
+  left: 360px;
 }
 
 .gamehub_offers li {
