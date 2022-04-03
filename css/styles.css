@@ -10,6 +10,14 @@ h2,
   text-transform: uppercase;
 }
 
+header {
+  display: flex;
+  align-items: center;
+}
+
+nav {
+  margin-left: 50px;
+}
 nav ul {
   padding: 0px;
 }
@@ -26,6 +34,8 @@ a {
 .active {
   text-decoration: underline;
 }
+
+/* Nav bar */
 
 header,
 footer {
@@ -68,26 +78,36 @@ footer {
 .landing {
   background-image: url(../image/Homepage/Home_image.jpg);
   background-size: cover;
-  min-height: 82vh;
   background-repeat: no-repeat;
   background-position-x: right;
   background-position-y: bottom;
+  min-height: 82vh;
   position: relative;
 }
 
 .landing__content {
   position: absolute;
   text-align: center;
-  top: 140px;
-  left: 360px;
+  top: 100px;
+  left: 100px;
+}
+
+.gamehub-offers {
+  max-width: 1000px;
+  margin: 50px auto;
+  display: flex;
+}
+
+.gamehub-offers > * {
+  flex: 1;
 }
 
 .gamehub_offers li {
   text-transform: capitalize;
 }
 
-.Gamehub-offers_image {
-  border: 200px;
+.Gamehub-offers__image {
+  border: 100px;
 }
 
 .review_image {
