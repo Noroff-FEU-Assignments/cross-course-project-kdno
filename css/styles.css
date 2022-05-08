@@ -243,7 +243,9 @@ textarea {
 .game-specific {
   display: flex;
   max-width: 1000px;
-  margin: auto;
+  flex-direction: column;
+  margin-top: 10px;
+  margin-bottom: 20px;
 }
 
 .game-specific > * {
@@ -302,12 +304,11 @@ textarea {
 }
 
 @media (min-width: 400px) {
-  
   .landing__content {
     left: 25%;
-    transform: 50%
-
+    transform: 50%;
   }
+}
 
 @media (min-width: 600px) {
   .featured {
@@ -344,6 +345,11 @@ textarea {
   .game-list {
     grid-template-columns: 1fr 1fr;
   }
+
+  .game-specific {
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
 @media (min-width: 800px) {
@@ -367,5 +373,10 @@ textarea {
 
   .game-list {
     grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .game-specific {
+    flex-direction: row;
+    margin: 50px auto;
   }
 }
