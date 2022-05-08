@@ -302,6 +302,10 @@ textarea {
     flex-direction: row;
   }
 
+  header {
+    justify-content: start;
+  }
+
   nav {
     display: block;
     position: static;
@@ -309,6 +313,7 @@ textarea {
 
   nav li {
     display: inline-block;
+    padding: 0px;
   }
 
   header label {
@@ -337,18 +342,5 @@ textarea {
 
   .cta {
     padding: 10px 60px 10px 60px;
-  }
-
-  nav {
-    display: block;
-    position: static;
-  }
-
-  header label {
-    display: none;
-  }
-
-  nav li {
-    display: inline-block;
   }
 }
