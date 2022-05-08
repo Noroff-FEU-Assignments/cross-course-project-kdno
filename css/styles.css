@@ -17,17 +17,34 @@ h2,
 header {
   display: flex;
   align-items: center;
+  justify-content: space-evenly;
 }
 
 nav {
   margin-left: 30px;
+  display: none;
+  position: fixed;
+  top: 30px;
+  background: #1d2540;
+  z-index: 1000;
+  right: 0px;
 }
+
+#burger-menu {
+  display: none;
+}
+
+#burger-menu:checked ~ nav {
+  display: block;
+}
+
 nav ul {
   padding: 0px;
 }
 
 nav li {
-  display: inline-block;
+  display: block;
+  padding: 10px 20px;
 }
 
 /* Nav bar */
@@ -58,7 +75,7 @@ header a {
   font-size: 0.8em;
   font-weight: bold;
   text-transform: uppercase;
-  padding: 10px 60px 10px 60px;
+  padding: 10px 40px 10px 40px;
   border-radius: 4px;
 }
 
@@ -103,7 +120,7 @@ footer {
   background-image: url(../image/Homepage/Home_image.jpg);
   background-size: cover;
   background-repeat: no-repeat;
-  background-position-x: right;
+  background-position-x: center;
   background-position-y: bottom;
   min-height: 82vh;
   position: relative;
@@ -112,8 +129,9 @@ footer {
 .landing__content {
   position: absolute;
   text-align: center;
-  top: 240px;
-  left: 650px;
+  top: 250px;
+  left: 50px;
+  transform: none;
 }
 
 .gamehub-offers {
@@ -146,12 +164,13 @@ footer {
 }
 
 .reviews__content div {
-  margin: 50px;
+  margin: 20px;
 }
 
 .reviews__content {
   text-align: left;
   margin: auto;
+  flex-direction: column;
 }
 
 .reviews__name {
@@ -166,7 +185,7 @@ footer {
 
 .featured {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: 1fr;
   max-width: 1000px;
   margin: 50px auto;
   grid-gap: 8px;
@@ -271,4 +290,65 @@ textarea {
 
 .games img {
   width: 100%;
+}
+
+@media (min-width: 600px) {
+  .featured {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .reviews__content,
+  .gamehub-offers {
+    flex-direction: row;
+  }
+
+  nav {
+    display: block;
+    position: static;
+  }
+
+  nav li {
+    display: inline-block;
+  }
+
+  header label {
+    display: none;
+  }
+}
+
+@media (min-width: 800px) {
+  .featured {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .reviews__content div {
+    margin: 50px;
+  }
+
+  .landing {
+    background-position-x: right;
+  }
+
+  .landing__content {
+    top: 240px;
+    left: 40%;
+    transform: 50%;
+  }
+
+  .cta {
+    padding: 10px 60px 10px 60px;
+  }
+
+  nav {
+    display: block;
+    position: static;
+  }
+
+  header label {
+    display: none;
+  }
+
+  nav li {
+    display: inline-block;
+  }
 }
