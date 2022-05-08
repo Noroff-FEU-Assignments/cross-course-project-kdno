@@ -19,20 +19,28 @@
         </ul>
       </nav>
     </header>
-    <main>
+    <main class="contact">
      <h1>Contact</h1>
-     <form method="POST">
-       <label for="name"> Name*</label>
-       <input type="text" id="name" name="name"/>
-       <label for="email"> E-mail*</label>
-       <input type="text" id="email" name="email"/>
-       <label for="ordernumber"> Order number (optional)</label>
-       <input type="text" id="ordernumber" name="ordernumber"/>
-       <label for="message"> Message*</label>
-       <textarea id="message" name="message"></textarea>
-       <input type="checkbox" id="antirobot" name="human" />
-       <label for="antirobot"> I am not a robot</label>
-      <input type="Submit" value="submit" class="cta" />
+     <form method="GET">
+       <div class="form-wrapper">
+        <section>
+          <label for="name"> Name*</label>
+          <input type="text" id="name" name="name"/>
+          <label for="email"> E-mail*</label>
+          <input type="text" id="email" name="email"/>  
+          <label for="ordernumber"> Order number (optional)</label>
+          <input type="text" id="ordernumber" name="ordernumber"/>
+        <section>
+          <input type="checkbox" id="antirobot" name="human" />
+          <label for="antirobot"> I am not a robot</label>
+        </section> 
+         </section>
+         <section>
+          <label for="message"> Message*</label>
+          <textarea id="message" name="message"></textarea>
+         </section>
+       </div>
+         <input type="Submit" value="submit" class="cta" />
      </form>
     </main>
     <footer>Copyright &copy;</footer>
