@@ -140,6 +140,13 @@ footer {
   float: right;
 }
 
+/* Contact page */
+input,
+textarea {
+  border: 2px solid #6d6d6d;
+  border-radius: 5px;
+}
+
 /* Game specific page */
 
 .game-specific {
