@@ -152,10 +152,28 @@ footer {
   flex: 1;
 }
 
+.game-specific__details {
+  padding: 0px 20px;
+}
+
+.game-specific__details a {
+  display: block;
+  width: 65px;
+  margin: auto
+}
+
+.game-specific__price {
+  font-size: 1.3em
+}
+
+
+
 .game-image {
-  max-width: 150px;
+  max-width: 160px;
   max-height: 350px;
   margin-left: 150px;
+  margin-top: 10px;
+  
 }
 
 .game-image_thumbnails {
@@ -169,4 +187,6 @@ footer {
   max-width: 200px;
   max-height: 100px;
   margin-left: 25px;
+  margin-bottom: 10px;
 }
+|
