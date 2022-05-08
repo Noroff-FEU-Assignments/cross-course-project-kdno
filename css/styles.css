@@ -159,21 +159,18 @@ footer {
 .game-specific__details a {
   display: block;
   width: 65px;
-  margin: auto
+  margin: auto;
 }
 
 .game-specific__price {
-  font-size: 1.3em
+  font-size: 1.3em;
 }
-
-
 
 .game-image {
   max-width: 160px;
   max-height: 350px;
   margin-left: 150px;
   margin-top: 10px;
-  
 }
 
 .game-image_thumbnails {
@@ -189,4 +186,3 @@ footer {
   margin-left: 25px;
   margin-bottom: 10px;
 }
-|
